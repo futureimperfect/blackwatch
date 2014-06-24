@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BWViewController : UIViewController
+@interface BWViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+{
+    NSArray *DataArray;
+}
+@property (strong, nonatomic) IBOutlet UILabel *labelShow;
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+- (IBAction)toPick:(id)sender;
 
 @end
