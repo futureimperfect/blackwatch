@@ -10,10 +10,14 @@
 
 @interface BWViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 {
-    NSArray *DataArray;
+    NSArray *adjective;
+    NSArray *noun;
 }
-@property (strong, nonatomic) IBOutlet UILabel *labelShow;
+
+@property (strong, nonatomic) IBOutlet UILabel *adjectiveLabel;
+@property (strong, nonatomic) IBOutlet UILabel *nounLabel;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+
 - (IBAction)toPick:(id)sender;
 
 @end

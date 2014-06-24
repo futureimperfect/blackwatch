@@ -19,7 +19,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    DataArray = [NSArray arrayWithObjects:@"Broken", @"Busted", @"Hosed", nil];
+    adjective = [NSArray arrayWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", nil];
+    noun = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"SCSI Controller", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,22 +31,31 @@
 
 - (IBAction)toPick:(id)sender
 {
-    _labelShow.text = [DataArray objectAtIndex:[_pickerView selectedRowInComponent:0]];
+    _adjectiveLabel.text = [adjective objectAtIndex:[_pickerView selectedRowInComponent:0]];
+    _nounLabel.text = [noun objectAtIndex:[_pickerView selectedRowInComponent:1]];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [DataArray count];
+    if (component == 0) {
+        return [adjective count];
+    } else {
+        return [noun count];
+    }
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [DataArray objectAtIndex:row];
+    if (component == 0) {
+        return [adjective objectAtIndex:row];
+    } else {
+        return [noun objectAtIndex:row];
+    }
 }
 
 @end
