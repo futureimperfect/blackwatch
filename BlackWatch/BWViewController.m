@@ -23,14 +23,14 @@
 //    noun = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"SCSI Controller", nil];
     adjectives = [[NSMutableArray alloc] init];
     nouns = [[NSMutableArray alloc] init];
-    nounChoices = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"Wi-Fi Card", @"Keyboard", @"Remote", @"Software", @"Server", @"Router", @"Switch", @"Cable", nil];
-    adjectiveChoices = [[NSArray alloc] initWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", @"Corrupted", @"Fried", @"Cracked", @"Smashed", @"Disjointed", @"Irregular", @"Defeated", nil];
+    nounChoices = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"Wi-Fi Card", @"Keyboard", @"Remote", @"Software", @"Server", @"Router", @"Switch", @"Cable", @"LCD", @"Hard Drive", nil];
+    adjectiveChoices = [[NSArray alloc] initWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", @"Corrupted", @"Fried", @"Cracked", @"Smashed", @"Disjointed", @"Irregular", @"Defeated", @"Sprained", @"Bruised", nil];
 
     for (NSInteger i=0; i<100; i++) {
 //        [adjectives setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
-        [adjectives setObject:[adjectiveChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%11] integerValue]] atIndexedSubscript:i];
+        [adjectives setObject:[adjectiveChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%13] integerValue]] atIndexedSubscript:i];
 //        [nouns setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
-        [nouns setObject:[nounChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%11] integerValue]] atIndexedSubscript:i];
+        [nouns setObject:[nounChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%13] integerValue]] atIndexedSubscript:i];
     }
 
     [self action];
