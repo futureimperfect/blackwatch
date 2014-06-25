@@ -30,6 +30,7 @@
 		1AC69541195A551800D2BD81 /* fail-trombone-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69539195A551800D2BD81 /* fail-trombone-02.wav */; };
 		1AC69542195A551800D2BD81 /* fail-trombone-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */; };
 		1AC69543195A551800D2BD81 /* fail-trumpet-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6953B195A551800D2BD81 /* fail-trumpet-01.wav */; };
+		1AC69585195B8B9400D2BD81 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC69584195B8B9400D2BD81 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1AC69539195A551800D2BD81 /* fail-trombone-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-02.wav"; sourceTree = "<group>"; };
 		1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-03.wav"; sourceTree = "<group>"; };
 		1AC6953B195A551800D2BD81 /* fail-trumpet-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trumpet-01.wav"; sourceTree = "<group>"; };
+		1AC69584195B8B9400D2BD81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC69585195B8B9400D2BD81 /* MessageUI.framework in Frameworks */,
 				1AC69533195A531000D2BD81 /* AudioToolbox.framework in Frameworks */,
 				1A41216C194BC27000B7B3A1 /* CoreGraphics.framework in Frameworks */,
 				1A41216E194BC27000B7B3A1 /* UIKit.framework in Frameworks */,
@@ -128,6 +131,7 @@
 		1A412168194BC27000B7B3A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AC69584195B8B9400D2BD81 /* MessageUI.framework */,
 				1AC69532195A531000D2BD81 /* AudioToolbox.framework */,
 				1A412169194BC27000B7B3A1 /* Foundation.framework */,
 				1A41216B194BC27000B7B3A1 /* CoreGraphics.framework */,
