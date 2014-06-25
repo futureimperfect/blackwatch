@@ -11,8 +11,10 @@
 
 @interface BWViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 {
-    NSMutableArray *adjective;
-    NSMutableArray *noun;
+    NSMutableArray *adjectives;
+    NSMutableArray *nouns;
+    NSArray *adjectiveChoices;
+    NSArray *nounChoices;
     SystemSoundID soundFileObject;
 }
 
