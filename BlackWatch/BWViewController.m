@@ -14,26 +14,32 @@
 
 @implementation BWViewController
 
+@synthesize email;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 
-//    adjective = [NSArray arrayWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", nil];
-//    noun = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"SCSI Controller", nil];
+	// Do any additional setup after loading the view, typically from a nib.
+    [self setupChoices];
+    [self action];
+}
+
+- (void)setupChoices
+{
+    //    adjective = [NSArray arrayWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", nil];
+    //    noun = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"SCSI Controller", nil];
     adjectives = [[NSMutableArray alloc] init];
     nouns = [[NSMutableArray alloc] init];
     nounChoices = [NSArray arrayWithObjects:@"Computer", @"Mouse", @"iPhone", @"Wi-Fi Card", @"Keyboard", @"Remote", @"Software", @"Server", @"Router", @"Switch", @"Cable", @"LCD", @"Hard Drive", nil];
     adjectiveChoices = [[NSArray alloc] initWithObjects:@"Broken", @"Busted", @"Hosed", @"Fubar", @"Corrupted", @"Fried", @"Cracked", @"Smashed", @"Disjointed", @"Irregular", @"Defeated", @"Sprained", @"Bruised", nil];
 
     for (NSInteger i=0; i<100; i++) {
-//        [adjectives setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
+        //        [adjectives setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
         [adjectives setObject:[adjectiveChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%13] integerValue]] atIndexedSubscript:i];
-//        [nouns setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
+        //        [nouns setObject:[NSNumber numberWithInt:arc4random()%10] atIndexedSubscript:i];
         [nouns setObject:[nounChoices objectAtIndex:[[NSNumber numberWithInt:arc4random()%13] integerValue]] atIndexedSubscript:i];
     }
-
-    [self action];
 }
 
 - (void)viewDidUnload
@@ -58,6 +64,14 @@
     */
 
     [self action];
+}
+
+- (IBAction)emailExcuse:(id)sender {
+    NSString *currentAdjective = [adjectives objectAtIndex:[_pickerView selectedRowInComponent:0]];
+    NSString *currentNoun = [nouns objectAtIndex:[_pickerView selectedRowInComponent:1]];
+    NSString *subject = [NSString stringWithFormat:@"Your %@ is %@", currentNoun, currentAdjective];
+    NSString *message = [NSString stringWithFormat:@"I'm sorry but your %@ is %@. There's nothing more we can do, so you might as well buy a new one or stop using technology altogether.", currentNoun, currentAdjective];
+    [self sendEmail:subject message:message];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -117,6 +131,29 @@
     if ([adjectives objectAtIndex:[_pickerView selectedRowInComponent:0]] == [nouns objectAtIndex:[_pickerView selectedRowInComponent:1]]) {
         NSLog(@"Bingo!");
     }
+}
+
+/*
+ Email methods
+ */
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    // Should check to see the result
+    [email dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)sendEmail:(NSString *)subject message:(NSString *)message
+{
+    // Initialize the view controller and set the delegate
+    email = [[MFMailComposeViewController alloc] init];
+    email.mailComposeDelegate = self;
+
+    // Set the subject and message
+    [email setSubject:subject];
+    [email setMessageBody:message isHTML:NO];
+
+    // Present the view controller
+    [self presentViewController:email animated:YES completion:nil];
 }
 
 @end
