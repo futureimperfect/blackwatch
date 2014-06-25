@@ -7,17 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface BWViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 {
-    NSArray *adjective;
-    NSArray *noun;
+    NSMutableArray *adjective;
+    NSMutableArray *noun;
+    SystemSoundID soundFileObject;
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *adjectiveLabel;
-@property (strong, nonatomic) IBOutlet UILabel *nounLabel;
+//@property (strong, nonatomic) IBOutlet UILabel *adjectiveLabel;
+//@property (strong, nonatomic) IBOutlet UILabel *nounLabel;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 
 - (IBAction)toPick:(id)sender;
+- (void)action;
 
 @end
