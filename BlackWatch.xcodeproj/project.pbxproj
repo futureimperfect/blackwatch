@@ -57,7 +57,7 @@
 		1A412192194BC27000B7B3A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A412194194BC27000B7B3A1 /* BlackWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackWatchTests.m; sourceTree = "<group>"; };
 		1AC69532195A531000D2BD81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-03.wav"; sourceTree = "<group>"; };
+		1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "fail-trombone-03.wav"; path = "../fail-trombone-03.wav"; sourceTree = "<group>"; };
 		1AC69584195B8B9400D2BD81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,6 @@
 				1A41218E194BC27000B7B3A1 /* BlackWatchTests */,
 				1A412168194BC27000B7B3A1 /* Frameworks */,
 				1A412167194BC27000B7B3A1 /* Products */,
-				1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +128,7 @@
 				1A41217E194BC27000B7B3A1 /* BWViewController.h */,
 				1A41217F194BC27000B7B3A1 /* BWViewController.m */,
 				1A412181194BC27000B7B3A1 /* Images.xcassets */,
+				1AE59A4319739B990078D224 /* Resources */,
 				1A412170194BC27000B7B3A1 /* Supporting Files */,
 			);
 			path = BlackWatch;
@@ -161,6 +161,14 @@
 				1A412191194BC27000B7B3A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE59A4319739B990078D224 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
