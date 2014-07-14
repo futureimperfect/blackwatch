@@ -3,7 +3,7 @@
 //  BlackWatch
 //
 //  Created by James Barclay on 6/13/14.
-//  Copyright (c) 2014 The Linde Group, Inc. All rights reserved.
+//  Copyright (c) 2014 Everything is Gray. All rights reserved.
 //
 
 #import "BWViewController.h"
