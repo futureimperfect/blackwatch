@@ -22,14 +22,7 @@
 		1A412193194BC27000B7B3A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A412191194BC27000B7B3A1 /* InfoPlist.strings */; };
 		1A412195194BC27000B7B3A1 /* BlackWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A412194194BC27000B7B3A1 /* BlackWatchTests.m */; };
 		1AC69533195A531000D2BD81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC69532195A531000D2BD81 /* AudioToolbox.framework */; };
-		1AC6953C195A551800D2BD81 /* fail-buzzer-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69534195A551800D2BD81 /* fail-buzzer-01.wav */; };
-		1AC6953D195A551800D2BD81 /* fail-buzzer-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69535195A551800D2BD81 /* fail-buzzer-02.wav */; };
-		1AC6953E195A551800D2BD81 /* fail-buzzer-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69536195A551800D2BD81 /* fail-buzzer-03.wav */; };
-		1AC6953F195A551800D2BD81 /* fail-buzzer-04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69537195A551800D2BD81 /* fail-buzzer-04.wav */; };
-		1AC69540195A551800D2BD81 /* fail-trombone-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69538195A551800D2BD81 /* fail-trombone-01.wav */; };
-		1AC69541195A551800D2BD81 /* fail-trombone-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC69539195A551800D2BD81 /* fail-trombone-02.wav */; };
 		1AC69542195A551800D2BD81 /* fail-trombone-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */; };
-		1AC69543195A551800D2BD81 /* fail-trumpet-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6953B195A551800D2BD81 /* fail-trumpet-01.wav */; };
 		1AC69585195B8B9400D2BD81 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC69584195B8B9400D2BD81 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,14 +57,7 @@
 		1A412192194BC27000B7B3A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A412194194BC27000B7B3A1 /* BlackWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackWatchTests.m; sourceTree = "<group>"; };
 		1AC69532195A531000D2BD81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1AC69534195A551800D2BD81 /* fail-buzzer-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-buzzer-01.wav"; sourceTree = "<group>"; };
-		1AC69535195A551800D2BD81 /* fail-buzzer-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-buzzer-02.wav"; sourceTree = "<group>"; };
-		1AC69536195A551800D2BD81 /* fail-buzzer-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-buzzer-03.wav"; sourceTree = "<group>"; };
-		1AC69537195A551800D2BD81 /* fail-buzzer-04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-buzzer-04.wav"; sourceTree = "<group>"; };
-		1AC69538195A551800D2BD81 /* fail-trombone-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-01.wav"; sourceTree = "<group>"; };
-		1AC69539195A551800D2BD81 /* fail-trombone-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-02.wav"; sourceTree = "<group>"; };
 		1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trombone-03.wav"; sourceTree = "<group>"; };
-		1AC6953B195A551800D2BD81 /* fail-trumpet-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fail-trumpet-01.wav"; sourceTree = "<group>"; };
 		1AC69584195B8B9400D2BD81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -108,14 +94,7 @@
 				1A41218E194BC27000B7B3A1 /* BlackWatchTests */,
 				1A412168194BC27000B7B3A1 /* Frameworks */,
 				1A412167194BC27000B7B3A1 /* Products */,
-				1AC69534195A551800D2BD81 /* fail-buzzer-01.wav */,
-				1AC69535195A551800D2BD81 /* fail-buzzer-02.wav */,
-				1AC69536195A551800D2BD81 /* fail-buzzer-03.wav */,
-				1AC69537195A551800D2BD81 /* fail-buzzer-04.wav */,
-				1AC69538195A551800D2BD81 /* fail-trombone-01.wav */,
-				1AC69539195A551800D2BD81 /* fail-trombone-02.wav */,
 				1AC6953A195A551800D2BD81 /* fail-trombone-03.wav */,
-				1AC6953B195A551800D2BD81 /* fail-trumpet-01.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,17 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC6953D195A551800D2BD81 /* fail-buzzer-02.wav in Resources */,
-				1AC69541195A551800D2BD81 /* fail-trombone-02.wav in Resources */,
 				1A412182194BC27000B7B3A1 /* Images.xcassets in Resources */,
 				1AC69542195A551800D2BD81 /* fail-trombone-03.wav in Resources */,
 				1A412174194BC27000B7B3A1 /* InfoPlist.strings in Resources */,
-				1AC6953F195A551800D2BD81 /* fail-buzzer-04.wav in Resources */,
-				1AC6953E195A551800D2BD81 /* fail-buzzer-03.wav in Resources */,
-				1AC69543195A551800D2BD81 /* fail-trumpet-01.wav in Resources */,
-				1AC69540195A551800D2BD81 /* fail-trombone-01.wav in Resources */,
 				1A41217D194BC27000B7B3A1 /* Main.storyboard in Resources */,
-				1AC6953C195A551800D2BD81 /* fail-buzzer-01.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
